@@ -25,12 +25,10 @@ router.checkout('mongooseTest', function (req, res, next) {
       console.log(err);
     }
     else {
-      console.log('success inserted')
+      console.log('success inserted');
     }
-
-  })
-
+  });
+  res.send('数据库连接测试');
 })
-
 
 module.exports = router;
